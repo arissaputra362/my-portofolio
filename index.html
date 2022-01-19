@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Portofolio | Aris Saputra</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark py-4 bg-dark sticky-top">
+      <div class="container">
+        <a
+          class="navbar-brand d-flex justify-content-center align-items-center"
+          href="#"
+        >
+          <i class="fas fa-smile-wink me-2"></i>
+          Aris
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" onclick="moveMenuNav(this)" href="#"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="moveMenuNav(this)" href="#services"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="moveMenuNav(this)" href="#portfolio"
+                >Work</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" onclick="moveMenuNav(this)" href="#contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto me-0 nav-icon">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.instagram.com/arissaputra362/"
+              >
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="https://www.linkedin.com/in/mohammad-aris-saputra-22b1ba1b5"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                target="_blank"
+                href="mailto:arissaputra362@gmail.com"
+              >
+                <i class="far fa-envelope"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home -->
+    <section class="home" id="home">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 d-flex justify-content-center">
+            <div class="img-container">
+              <div class="bg-img"></div>
+              <img src="img/me.png" alt="" />
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-center">
+            <div class="content">
+              <div class="name-container">
+                <h2 class="sub-name">I'm</h2>
+                <h1 class="name">Mohammad Aris Saputra</h1>
+              </div>
+              <hr />
+              <div class="intro">
+                <p>
+                  a freelancer who provides services in web interface design and
+                  digital programming to help you create amazing products
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service -->
+    <section class="services" id="services">
+      <div class="container">
+        <div class="title-container">
+          <div class="row">
+            <div class="col-md-4">
+              <h2 class="title">What Can I do for Your Needs?</h2>
+            </div>
+            <div class="col-md-8 d-flex align-items-md-center">
+              <hr />
+            </div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fas fa-pencil-ruler"></i>
+                  </div>
+                  <h5 class="card-title">UI/UX Design</h5>
+                  <p class="card-text">
+                    Create a beautiful and usefull Application / Web UI for
+                    users.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fas fa-desktop"></i>
+                  </div>
+                  <h5 class="card-title">Frontend Web Dev</h5>
+                  <p class="card-text">
+                    Implement your web design into a beautiful and attractive
+                    website.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <div class="card-icon">
+                    <i class="fas fa-globe"></i>
+                  </div>
+                  <h5 class="card-title">UI/UX Design</h5>
+                  <p class="card-text">
+                    Build a web system that suits your needs.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pe-lg-5">
+            <div class="title-container">
+              <h2 class="title mb-4">My Portfolio</h2>
+              <p class="capt">Here are some portfolios that I have completed</p>
+              <hr />
+            </div>
+            <!-- Solana -->
+            <div
+              class="card"
+              onmouseover="showDesc('solana')"
+              onmouseout="hideDesc('solana')"
+            >
+              <div class="card-body">
+                <div
+                  class="card-title-container d-flex justify-content-between align-items-center"
+                >
+                  <div class="">
+                    <h5 class="card-title m-0">Solana Web</h5>
+                    <hr />
+                  </div>
+                  <p class="card-text">Frontend Web Dev</p>
+                </div>
+              </div>
+              <div class="img-container">
+                <img src="img/solana.png" class="card-img-bottom" alt="..." />
+                <div class="desc-container" id="solana">
+                  <div class="desc-body">
+                    <p>
+                      Design in the figma and Implement into a landingpage to
+                      introduce about solana, their services, and show ther
+                      portofolio with responsive design. <br />
+                      Technology used in this project :
+                    </p>
+                    <div class="d-flex tech-container">
+                      <i class="fab fa-figma"></i>
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-css3-alt"></i>
+                      <i class="fab fa-js"></i>
+                    </div>
+                    <a
+                      href="https://www.solana.web.id"
+                      target="_blank"
+                      class="d-inline-block btn"
+                      >Show more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Detechtive -->
+            <div
+              class="card"
+              onmouseover="showDesc('detechtive')"
+              onmouseout="hideDesc('detechtive')"
+            >
+              <div class="card-body">
+                <div
+                  class="card-title-container d-flex justify-content-between align-items-center"
+                >
+                  <div class="">
+                    <h5 class="card-title m-0">Detechtive</h5>
+                    <hr />
+                  </div>
+                  <p class="card-text">UI/UX Design</p>
+                </div>
+              </div>
+              <div class="img-container">
+                <img
+                  src="img/detechtive.png"
+                  class="card-img-bottom"
+                  alt="..."
+                />
+                <div class="desc-container" id="detechtive">
+                  <div class="desc-body">
+                    <p>
+                      Design company profile landin page to introduce about
+                      their company, services, portofolio, and blogs. Design
+                      color based on company logo <br />
+                      Technology used in this project :
+                    </p>
+                    <div class="d-flex tech-container">
+                      <i class="fab fa-figma"></i>
+                    </div>
+                    <a
+                      href="https://www.figma.com/file/aEtvrhe7LnIho2RkTNhYJ0/Detechtive?node-id=2%3A25"
+                      target="_blank"
+                      class="d-inline-block btn"
+                      >Show more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 ps-lg-5">
+            <!-- Codepan -->
+            <div
+              class="card"
+              onmouseover="showDesc('codepan')"
+              onmouseout="hideDesc('codepan')"
+            >
+              <div class="card-body">
+                <div
+                  class="card-title-container d-flex justify-content-between align-items-center"
+                >
+                  <div class="">
+                    <h5 class="card-title m-0">Codepan Studio</h5>
+                    <hr />
+                  </div>
+                  <p class="card-text">Frontend Web Dev</p>
+                </div>
+              </div>
+              <div class="img-container">
+                <img src="img/codepan.png" class="card-img-bottom" alt="..." />
+                <div class="desc-container" id="codepan">
+                  <div class="desc-body">
+                    <p>
+                      Implementing the figma design that has been made into a
+                      web company profile with a responsive design. As well as
+                      retrieve data from the back end (Codeigniter). <br />
+                      Technology used in this project :
+                    </p>
+                    <div class="d-flex tech-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-css3-alt"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-free-code-camp"></i>
+                    </div>
+                    <a
+                      href="https://www.codepanstudio.co.id"
+                      target="_blank"
+                      class="d-inline-block btn"
+                      >Show more</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Sipanen -->
+            <div
+              class="card"
+              onmouseover="showDesc('sipanen')"
+              onmouseout="hideDesc('sipanen')"
+            >
+              <div class="card-body">
+                <div
+                  class="card-title-container d-flex justify-content-between align-items-center"
+                >
+                  <div class="">
+                    <h5 class="card-title m-0">Sipanen</h5>
+                    <hr />
+                  </div>
+                  <p class="card-text">Web Dev</p>
+                </div>
+              </div>
+              <div class="img-container">
+                <img src="img/sipanen.png" class="card-img-bottom" alt="..." />
+                <div class="desc-container" id="sipanen">
+                  <div class="desc-body">
+                    <p>
+                      Build an Agricultural Land Monitoring System with CRUD
+                      data, automatic plant maintenance scheduling, recaps, user
+                      roles, and views for farmers and admins using the Laravel
+                      framework.
+                      <br />
+                      Technology used in this project :
+                    </p>
+                    <div class="d-flex tech-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-css3-alt"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-laravel"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ceritaku -->
+            <div
+              class="card mb-4"
+              onmouseover="showDesc('ceritaku')"
+              onmouseout="hideDesc('ceritaku')"
+            >
+              <div class="card-body">
+                <div
+                  class="card-title-container d-flex justify-content-between align-items-center"
+                >
+                  <div class="">
+                    <h5 class="card-title m-0">Ceritaku.id</h5>
+                    <hr />
+                  </div>
+                  <p class="card-text">Web Dev</p>
+                </div>
+              </div>
+              <div class="img-container">
+                <img src="img/certiaku.png" class="card-img-bottom" alt="..." />
+                <div class="desc-container" id="ceritaku">
+                  <div class="desc-body">
+                    <p>
+                      Build a Web Comic System with CRUD data, user roles, and
+                      views for users and admins using the Codeigniter
+                      framework. And Implement Adobe XD UI design to code using
+                      HTML, CSS, and Bootstrap with responsive design
+                      <br />
+                      Technology used in this project :
+                    </p>
+                    <div class="d-flex tech-container">
+                      <i class="fab fa-html5"></i>
+                      <i class="fab fa-css3-alt"></i>
+                      <i class="fab fa-js"></i>
+                      <i class="fab fa-free-code-camp"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hire -->
+    <section class="hire" id="contact">
+      <div class="contaner">
+        <h1 class="text-center">Ler Hire Me and Make The Best Product</h1>
+        <div class="btn-container d-flex justify-content-center mt-5">
+          <a
+            href="https://docs.google.com/uc?export=download&id=1lbWZR8BbhvFip8kBfJvP_PWfZZeW4hIN"
+            class="btn btn-white"
+            >Download CV</a
+          >
+          <a
+            target="_blank"
+            href="mailto:arissaputra362@gmail.com"
+            class="btn btn-green"
+            >Contact Me</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="letter">
+              <div class="logo d-flex align-items-center">
+                <i class="fas fa-smile-wink me-2"></i>
+                <h5 class="m-0">Aris</h5>
+              </div>
+              <p class="pe-lg-4">
+                Hi, nice to meet you. Let you know more abou me. Hope you feel
+                hapy today.
+              </p>
+              <div class="sosmed-container">
+                <a href="" class="sosmed rounded-circle">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="https://www.linkedin.com/in/mohammad-aris-saputra-22b1ba1b5"
+                  class="sosmed rounded-circle"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a
+                  target="_blank"
+                  href="mailto:arissaputra362@gmail.com"
+                  class="sosmed rounded-circle"
+                >
+                  <i class="far fa-envelope"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h5>Menu</h5>
+            <ul class="link-text">
+              <li><a href="#">Home</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portoflio">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Portfolio</h5>
+            <ul class="link-text">
+              <li>
+                <a target="_blank" href="https://www.codepanstudio.co.id"
+                  >Codepan Studio</a
+                >
+              </li>
+              <li>
+                <a target="_blank" href="https://www.solana.web.id"
+                  >Solana Web</a
+                >
+              </li>
+              <li>
+                <a
+                  target="_blank"
+                  href="https://www.figma.com/file/aEtvrhe7LnIho2RkTNhYJ0/Detechtive?node-id=2%3A25"
+                  >Detechtive</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3">
+            <h5>Contact</h5>
+            <ul class="link-text">
+              <li>
+                <a target="_blank" href="mailto:arissaputra362@gmail.com"
+                  >arissaputra362@gmail.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap Js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--  Main js -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
